@@ -229,6 +229,8 @@ main .date input[type='date']{
     color: var(--clr-dark);
 
 }
+
+/* INSIGHTS STARTED */
 main .insights{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -316,4 +318,41 @@ main .insights .progress .number{
 main .insights small{
     margin-top: 1.6rem;
     display: block;
+}
+
+/* INSIGHTS ENDED */
+
+/* RECENT ORDER START */
+main .recent-orders{
+    margin-top: 2rem;
+}
+
+main .recent-orders h2{
+    margin-bottom: 0.8rem;
+}
+main .recent-orders table{
+    background: var(--clr-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+main .recent-orders table:hover{
+    box-shadow: none;
+}
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--clr-light);
+    color: var(--clr-dark-variant);
+}
+main table tbody td:last-child{
+    border: none;
+}
+main .recent-orders a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--clr-primary);
 }
