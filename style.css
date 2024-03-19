@@ -55,7 +55,7 @@ body{
     display: grid;
     width: 96%;
     gap: 1.8rem;
-    grid-template-columns: 14rem auto 14rem;
+    grid-template-columns: 14rem auto 23rem;
     margin: 0 auto;
 
 }
@@ -402,6 +402,7 @@ main .recent-orders a{
     text-align: right;
 }
 
+/* RECENT UPDATES */
 .right .recent-updates{
     margin-top: 1rem;
 }
@@ -415,4 +416,114 @@ main .recent-orders a{
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+}
+.right .recent-updates .updates:hover{
+    box-shadow: none;
+}
+.right .recent-updates .updates .update{
+    display: grid;
+    /* grid-template-columns: 2.6rem auto; */
+    margin-bottom: 0.8rem;
+} 
+/* END OF RECENT UPDATES */
+
+/* SALES ANALYTICS */
+ .right .sales-analytics{
+    margin-top: 2rem;
+}
+.right .sales-analytics h2{
+    margin-bottom: 0.8rem;
+}
+.right .sales-analytics .item{
+    background: var(--clr-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+.right .sales-analytics .item:hover{
+    box-shadow: none;
+}
+.right .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
+.right .sales-analytics .item .icon{
+    padding: 0.6rem;
+    color: var(--clr-white);
+    border-radius: 50%;
+    background: var(--clr-primary);
+    display: flex;
+}
+.right .sales-analytics .add-product{
+    background-color: transparent;
+    border: 2px dashed var(--clr-primary);
+    color: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .sales-analytics .add-product div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.right .sales-analytics .add-product div h3{
+    font-weight: 600;
+}
+
+/* ==========MEDIA QUERIES========= */
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 24rem;
+    }
+    aside .logo h2{
+        display: none;
+    }
+
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .recent-orders{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8rem;
+    }
+    main .recent-orders table{
+        width: 83vw;
+    }
+
+    main table thead tr th:last-child,
+    main table thead tr th:first-child{
+        display: none;
+    }
+    main table tbody tr td:last-child,
+    main table tbody tr td:first-child{
+        display: none;
+    }
 }
