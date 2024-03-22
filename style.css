@@ -25,6 +25,16 @@
     --box-shadow: 0 2rem 3rem var(--clr-light);
 }
 
+/* dark theme */
+.dark-theme-variables {
+    --clr-color-background: #181a1e;
+    --clr-white: #202528;
+    --clr-light: rgba(0, 0, 0, 0.4);
+    --clr-dark: #edeffd;
+    --clr-dark-variant: #677483;
+    --box-shadow: 0 2rem 3rem var(--clr-light)
+}  
+
 *{
     margin: 0;
     padding: 0;
@@ -546,7 +556,7 @@ main .recent-orders a{
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
-        animation: showMenu 400ms ease;
+        animation: showMenu 1s forwards;
     }
     @keyframes showMenu {
         to {
